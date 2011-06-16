@@ -52,6 +52,11 @@ a
         min-width: 210px;
         padding: 0 3px;
     }
+    .formbox input.btn-yes
+    {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
     .fb-chkbox
     {
     }
@@ -62,7 +67,7 @@ a
         margin: 1px 0 0 15px;
         padding: 0 10px;
         background-color: #16c4f3;
-    }
+    }images
     .icon-formerr
     {
         width: 6px;
@@ -82,7 +87,7 @@ a
     }
     
     /* - Buttons */
-    .btn-start
+    .btn-yes
     {
         color: #fff;
         line-height: 2em;
@@ -105,6 +110,14 @@ a
         background: -webkit-linear-gradient(#97dbf3, #1cc5f3); 
         /* Opera 11.10+ */
         background: -o-linear-gradient(#97dbf3, #1cc5f3);
+    }
+    .btn-no
+    {
+    }
+    .btn-disable
+    {
+        opacity: 0.6;
+        filter: alpha(opacity=60);
     }
     
     /* - Icons */

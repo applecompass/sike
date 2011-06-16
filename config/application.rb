@@ -31,7 +31,7 @@ module Demo
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:zhuomi] = %w(jquery rails common base config di/form page/login page/plan page/reg ui/footer ui/form ui/plan)
+    config.action_view.javascript_expansions[:zhuomi] = %w(jquery rails common base config page/login page/plan page/reg ui/footer ui/form ui/plan)
 
     config.action_view.stylesheet_expansions[:zhuomi] = %w(base common frame page/login page/plan page/reg)
     # Configure the default encoding used in templates for Ruby 1.9.

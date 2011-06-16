@@ -4,7 +4,8 @@ Demo::Application.routes.draw do
   get "say/goodbye"
   
   resources :events
-  resources :targets
+  resources :targets  
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

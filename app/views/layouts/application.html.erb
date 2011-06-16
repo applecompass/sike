@@ -1,46 +1,44 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
 <head>
-  	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>啄米</title>
-	<meta content="啄米网" name="keywords" />
-	<meta content="啄米网" name="description" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>啄米</title>
+    <meta content="啄米网" name="keywords" />
+    <meta content="啄米网" name="description" />
 
-	<link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
-	<link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
+    <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
+    <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    
   <%= stylesheet_link_tag :zhuomi %>
   <%= javascript_include_tag :zhuomi %>
   <%= csrf_meta_tag %>
+
 </head>
 <body>
-	<div id="header">
-	        <div class="pw align-c cf">
-	            <div class="col-l nohand">
-	                <h1 class="col-l">
-	                    <a href="#this" id="logo" class="col-l">
-	                        <img src="../images/high/logo.png" alt="啄米" />
-	                    </a>
-	                </h1>
-	                <div id="" class="col-l ml-5">
-	                    <p class="yel txt-m">Beta</p>
-	                    <p class="whi txt-m mt-1">收集，分类和交流你的日常数据</p>
-	                </div>
-	            </div>
-	            <div id="accountbox" class="col-r cf">
-	                <div class="ab-profile col-l">
-	                    <a class="ab-headshot col-l" href="reg.htm">
-	                        <img src="../images/photos/s.jpg" alt="LiangShu" title="LiangShu" />
-	                    </a>
-	                    <span class="ab-name col-l ml-5">Shu</span>
-	                </div>
-	                <a href="#this" class="ab-drop col-l ml-8"></a>
-	            </div>
-	        </div>
-	    </div>
-	    <p class="shoulder"></p>
-	    <div id="wrapper" class="pw align-c">
+    <div id="header">
+        <div id="head" class="pw align-c cf">
+            <div class="col-l nohand">
+                <h1 class="col-l">
+                    <a href="#this" id="logo" class="col-l">
+                        <img src="../images/high/logo.png" alt="啄米" />
+                    </a>
+                </h1>
+                <div class="col-l ml-5">
+                    <p class="yel txt-m">Beta</p>
+                    <p class="whi txt-m mt-1">收集，分类和交流你的日常数据</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="shoulder"></p>
+    <div id="wrapper" class="pw align-c">
+
 <%= yield %>
-</div>
+ </div>
     <div id="footer" class="pw align-c">
         <p class="col-r">
             天才，都TM是练出来的
@@ -65,6 +63,9 @@
             </div>
         </div>
     </div>
+
+</body>
+</html>
 
 
 </body>

@@ -9,7 +9,7 @@
 	}
 	
 	// ]]>
-	    </script>
+</script>
 <div class="pg-title">
             <span class="col-r txt-6xl pg-title-welcome">欢迎来到啄米...</span>
             <h2 class="txt-4xl azure">
@@ -50,17 +50,13 @@
                     <p class="txt-4xl bla mt-20">真的准备好了？</p>
 					<%= form_for @target, :url => targets_path do |f| %>
 						<%= f.hidden_field :target_count %>
-						<%= f.hidden_field :category_id %>
-						<%= f.hidden_field :metadata_id %>
-						<%= f.hidden_field :user_id %>
-						<%= f.hidden_field :status %>
 						<br />
-                    <p class="mt-18">
-                        <a href="#this" class="btn-start outerglow" onclick="submitForm();">
+					<p class="mt-18">
+                        <a href="#this" class="btn-yes outerglow" onclick="submitForm();">
                             立刻行动
                             <span class="icon-go"></span>
                         </a>
-                    </p>	
+                    </p>
 					<% end %>
                 </div>
             </div>
