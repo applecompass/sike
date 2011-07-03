@@ -13,7 +13,7 @@ class TargetsController < ApplicationController
   
   def create
     @target = Target.new(params[:target])
-    @target.category = Category.find_by_nam("running")
+    @target.category = Category.find_by_name("running")
     @target.metadata = Metadata.find_by_name("hour")
     @target.user_id = session[:user_id]
     @target.status = "active"
