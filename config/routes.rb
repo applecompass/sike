@@ -1,7 +1,6 @@
 Demo::Application.routes.draw do
-  get "say/hello"
-
-  get "say/goodbye"
+  get "users/login"
+  post "users/login"
   
   resources :events
   resources :targets  

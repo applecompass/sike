@@ -73,17 +73,23 @@
         };
 
         var validNull = function() {
+	
+			var result = true;
 
             if ($elMail[0].value === "") {
                 $elMail.next().show().find(".fb-tip-msg").empty().append(ZM.Config.Msg.Valid.mail);
+				result = false;
             }
             if ($elName[0].value === "") {
                 $elName.next().show().find(".fb-tip-msg").empty().append(ZM.Config.Msg.Valid.username);
+				result = false;
             }
             if ($elPass[0].value === "") {
                 $elPass.next().show().find(".fb-tip-msg").empty().append(ZM.Config.Msg.Valid.password);
+				result = false;
             }
 
+			return result;
 
         };
 
@@ -105,7 +111,9 @@
 
             $elSubmit.click(function() {
                 if ($elChk[0].checked) {
-                    validNull();
+                    if(validNull()){
+						$elSubmitInput.click();
+					}
                 }
                 return false;
             });
@@ -115,6 +123,7 @@
         var $elName = $("#user_nickname");
         var $elPass = $("#user_password");
         var $elSubmit = $("#fb-createuser");
+		var $elSubmitInput = $("#fb-createuser-submit");
         var $elChk = $("#fb-chk-protocal");
 
         var valid = function() {

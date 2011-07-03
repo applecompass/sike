@@ -1,7 +1,8 @@
 class TargetsController < ApplicationController
   
   def index 
-    @targets = Target.all
+    @user = User.find(session[:user_id])
+    @targets = @user.target.all
     
   end
   
@@ -14,7 +15,7 @@ class TargetsController < ApplicationController
     @target = Target.new(params[:target])
     @target.category = Category.find(1)
     @target.metadata = Metadata.find(1)
-    @target.user_id = User.find(1)
+    @target.user_id = session[:user_id]
     @target.status = "active"
     @last = Target.order("id desc").where("user_id = ?", 1).first
     
