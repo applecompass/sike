@@ -2,7 +2,7 @@ class TargetsController < ApplicationController
   
   def index 
     @user = User.find(session[:user_id])
-    @targets = @user.target.all
+    @targets = @user.targets.all
     
   end
   

@@ -3,7 +3,9 @@ Demo::Application.routes.draw do
   post "users/login"
   
   resources :events
-  resources :targets  
+  resources :targets do
+    resources :actions
+  end 
   resources :users
 
   # The priority is based upon order of creation:
