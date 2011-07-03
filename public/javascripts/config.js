@@ -24,7 +24,8 @@ ZM.Config = {
             mail: "请输入邮箱",
             username: "请输入用户名，以便于日后交流",
             password: "密码不能为空",
-            numeric: "请输入数字"
+            numeric: "请输入数字",
+            outside: "超过该计划时间上限"
         }
 
     },

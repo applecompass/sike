@@ -1,20 +1,41 @@
 <div id="mypage" class="mt-8 cf">
   <div class="col-l col-w">
     <div id="functionbox" class="cf">
-      <form action="" id="form-function">
+      <div id="fnb-planlist">
+        <span class="txt-6xl bla col-l ml-10">我要更新：</span>
+        <a href="#this" class="ph-one col-l ml-35">
+          <span class="ph-txt">
+            <span class="ph-val">1</span>
+            <span class="ph-unit">小时</span>
+          </span>
+        </a>
+        <a href="#this" class="ph-ten col-l ml-35">
+          <span class="ph-txt">
+            <span class="ph-val">10</span>
+            <span class="ph-unit">小时</span>
+          </span>
+        </a>
+        <a href="#this" class="ph-hdrd col-l ml-35">
+          <span class="ph-txt">
+            <span class="ph-val">100</span>
+            <span class="ph-unit">小时</span>
+          </span>
+        </a>
+      </div>
+      <form action="" id="form-function" class="clear hidden">
         <fieldset class="formbox">
           <legend class="hidden">烧</legend>
-          <div class="ph-one col-l">
+          <div id="fnb-hour" class="col-l ml-5">
             <span class="ph-txt">
               <span class="ph-val">1</span>
               <span class="ph-unit">小时</span>
             </span>
           </div>
           <div class="col-l ml-50 mt-30">
-            <span class="txt-5xl bla">这次我完成了：</span>
+            <span class="txt-6xl bla">这次我完成了：</span>
             <input type="text" id="fnb-input" />
-            <span class="txt-5xl mgry">分钟</span>
-            <a id="fnb-submit" href="#this" class="btn-yes btn-disable">
+            <span class="txt-6xl mgry">分钟</span>
+            <a id="fnb-submit" href="#this" class="btn-yes btn-disable ml-10">
               提交
             </a>
             <span class="hidden">
@@ -25,11 +46,203 @@
         </fieldset>
       </form>
     </div>
-    <div style="background: url(./_imgs/02.png) left top no-repeat; width: 680px; height: 383px;">
+    <div>
+      <div class="pg-title">
+        <ul class="col-r hor">
+          <li>
+            <a href="#this">全部</a>
+          </li>
+          <li>
+            <a href="#this">1小时</a>
+          </li>
+          <li>
+            <a href="#this">10小时</a>
+          </li>
+          <li>
+            <a href="#this">100小时</a>
+          </li>
+        </ul>
+        <h2 class="txt-4xl azure">
+          谁在用啄米
+        </h2>
+      </div>
+      <div id="filterbox" class="cf mt-5">
+        <ul class="fb-list hor azure col-l">
+          <li>
+            <a href="#this">图片</a>
+          </li>
+          <li>
+            <a href="#this">音乐</a>
+          </li>
+          <li>
+            <a href="#this">视频</a>
+          </li>
+          <li>
+            <a href="#this">活动</a>
+          </li>
+        </ul>
+        <div class="pos-rel col-r">
+          <input type="text" />
+          <a href="#this" class="pos-abs btn-fb-clear">Clear</a>
+        </div>
+      </div>
+      <div id="feedsbox">
+        <div class="fb-record cf">
+          <a href="#this" class="col-l">
+            <img src="_imgs/photos/m.png" />
+          </a>
+          <div class="fb-r-container col-l">
+            <div class="fb-r-content cf">
+              <div>
+                <p class="col-l">
+                  <a href="#this" class="azure">SHU</a>
+                  <span class="fb-r-state">
+                    10分钟前更新了<span class="fb-r-plan">1小时</span>状态:
+                  </span>
+                  <span class="fb-r-title">今天又跑了30分钟</span>
+                </p>
+                <p class="col-r">
+                  <span>2011.06.12 04:40 PM</span>
+                </p>
+              </div>
+              <div class="clear">
+                <a class="col-r">
+                  <img src="_imgs/photos/pic_001.gif" />
+                </a>
+                <p class="bla">他出身于书香门第，父亲是大学教授。他为爱妻，20年来从不上CCAV；他是个好爸爸；他顾家，厌恶应酬，滴酒不沾；他才华横溢，琴棋书画样样精通，学生时是体育全能，探戈高手；他饱读诗书，季羡林赞他可胜任北大的研究生导师，曾与钱钟书是忘年之交，他说他只是个戏子。他就是陈道明。一个很给力的男人。</p>
+              </div>
+              <ul class="clear col-r hor">
+                <li>
+                  <a href="#this">留言</a>
+                </li>
+                <li>
+                  <a href="#this">支持</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="fb-record cf">
+          <a href="#this" class="col-l">
+            <img src="_imgs/photos/m.png" />
+          </a>
+          <div class="fb-r-container col-l">
+            <div class="fb-r-content cf">
+              <div>
+                <p class="col-l">
+                  <a href="#this">我</a>
+                  <span class="fb-r-state">
+                    10分钟前更新了<span class="fb-r-plan">10小时</span>状态:
+                  </span>
+                  <span class="fb-r-title">今天又跑了30分钟</span>
+                </p>
+                <p class="col-r">
+                  <span>2011.06.12 04:40 PM</span>
+                </p>
+              </div>
+              <div class="clear">
+                <p class="bla">他出身于书香门第，父亲是大学教授。他为爱妻，20年来从不上CCAV；他是个好爸爸；他顾家，厌恶应酬，滴酒不沾。</p>
+              </div>
+              <ul class="clear col-r hor">
+                <li>
+                  <a href="#this">留言</a>
+                </li>
+                <li>
+                  <a href="#this">支持</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="col-l col-n ml-5">
-    <div style="background: url(./_imgs/01.png) left top no-repeat; width: 281px; height: 333px;">
+    <div id="profilebox" class="cf">
+      <div class="pb-headshot col-l pos-rel">
+        <a href="#this" class="pb-hs-img">
+          <img src="_imgs/photos/xxl.png" alt="LiangShu" />
+        </a>
+        <a href="#this" class="pb-hs-edit pos-abs whi">更改头像</a>
+      </div>
+      <div class="ml-10 col-l">
+        <p>
+          <span class="pb-name pb-male azure txt-3xl">SHU</span>
+          <a href="#this" class="azure col-r">
+            修改资料
+          </a>
+        </p>
+        <p class="pb-loc">上海</p>
+        <p class="pb-age">80后 牡羊座</p>
+        <ul id="activitystatisticbox" class="hor">
+          <li>
+            <p class="bla txt-7xl">3</p>
+            <span class="bla">活动</span>
+          </li>
+          <li>
+            <p class="bla txt-7xl">0</p>
+            <span class="bla">达成</span>
+          </li>
+          <li>
+            <p class="bla txt-7xl">0</p>
+            <span class="bla">放弃</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="addupbox" class="clear cf mt-13">
+      <div class="col-l">
+        <p>累计完成：</p>
+        <span>Hours</span>
+      </div>
+      <ul class="hor col-l">
+        <li>0</li>
+        <li>1</li>
+        <li class="aub-sep">,</li>
+        <li>1</li>
+        <li>0</li>
+        <li>1</li>
+      </ul>
+    </div>
+    <div id="activitystatusbox" class="mt-20">
+      <ul>
+        <li class="asb-one cf">
+          <div class="asb-icon col-l">1</div>
+          <div class="asb-bar col-l">
+            <p class="asb-bar-progress"></p>
+          </div>
+          <a class="asb-giveup col-l" href="#this">
+            x
+            <span class="asb-gu-prompt">
+              放弃计划<span class="asb-gu-arrow"></span>
+            </span>
+          </a>
+        </li>
+        <li class="asb-ten cf">
+          <div class="asb-icon col-l">10</div>
+          <div class="asb-bar col-l">
+            <p class="asb-bar-progress"></p>
+          </div>
+          <a class="asb-giveup col-l" href="#this">
+            x
+            <span class="asb-gu-prompt">
+              放弃计划<span class="asb-gu-arrow"></span>
+            </span>
+          </a>
+        </li>
+        <li class="asb-hdrd cf">
+          <div class="asb-icon col-l">100</div>
+          <div class="asb-bar col-l">
+            <p class="asb-bar-progress"></p>
+          </div>
+          <a class="asb-giveup col-l" href="#this">
+            x
+            <span class="asb-gu-prompt">
+              放弃计划<span class="asb-gu-arrow"></span>
+            </span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
