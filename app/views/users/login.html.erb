@@ -1,0 +1,16 @@
+<% form_tag do %>
+    <fieldset class="formbox">
+        <legend class="bold bla txt-xxl fb-title">登录</legend>
+        <p>
+			<label for="email">Email:</label>
+			<%= text_field_tag :email, params[:name] %>
+		</p>
+		
+		<p>
+			<lable for="password">Password:</label>
+			<%= text_field_tag :password, params[:password]%>
+		</p>
+		
+		<%= submit_tag "Login"%>
+    </fieldset>
+<% end%>
