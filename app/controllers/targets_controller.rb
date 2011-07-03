@@ -34,6 +34,7 @@ class TargetsController < ApplicationController
   end
   
   def destroy
+    @target = Target.find(params[:id])
     @target.destroy
 
     redirect_to targets_url
