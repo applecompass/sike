@@ -20,7 +20,7 @@
     #head
     {
         padding: 13px 27px;
-        background: url(../images/high/logo_bg.png) left bottom no-repeat;
+        background: url(../_imgs/high/logo_bg.png) left bottom no-repeat;
     }
         /* - Logo */
         #logo,
@@ -85,17 +85,17 @@
     #au-prev,
     #au-next
     {
-        width: 5px;images
+        width: 5px;
         height: 16px;
         float: left;
     }
     #au-prev
     {
-        background: url(../images/high/icon_prev.png) right center no-repeat;
+        background: url(../_imgs/high/icon_prev.png) right center no-repeat;
     }
     #au-next
     {
         margin-left: 2px;
-        background: url(../images/high/icon_next.png) left center no-repeat;
+        background: url(../_imgs/high/icon_next.png) left center no-repeat;
     }
 /* + Frame CSS - End */

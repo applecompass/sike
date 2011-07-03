@@ -1,0 +1,107 @@
+/*========================================================
+    File:        mypage.css
+    Description: CSS Styles for plan page
+========================================================*/
+
+/* + Mypage CSS - Begin */
+#mypage .col-w
+{
+    width: 70.8%;
+}
+#mypage .col-n
+{
+    width: 28.5%;
+}
+
+#functionbox
+{
+    height: 127px;
+    padding-top: 15px;
+    padding-left: 25px;
+    background: url(../../_imgs/high/bg_fn.png) left bottom repeat-x;
+}
+#fnb-input
+{
+    border: 1px solid #cbcbcb;
+    border-bottom-color: #dbdbdb;
+    font-size: 170%;
+    padding: 0 5px;
+    width: 120px;
+    color: #f37916;
+    text-align: center;
+}
+
+    /* - Plan Hour Box */
+    .ph-one,
+    .ph-ten,
+    .ph-hdrd
+    {
+        display: inline-block;
+        padding-bottom: 2px;
+        margin-left: 5px;
+        border-bottom: 2px solid #f4f3f3;
+    }
+    a.ph-one,
+    a.ph-ten,
+    a.ph-hdrd
+    {
+        cursor: pointer;
+    }
+    .ph-one
+    {
+        margin-left: 0;
+    }
+    a.ph-one:hover,
+    a.ph-one.active
+    {
+        border-bottom: 2px solid #fdc51a;
+    }
+    a.ph-ten:hover,
+    a.ph-ten.active
+    {
+        border-bottom: 2px solid #f3a216;
+    }
+    a.ph-hdrd:hover,
+    a.ph-hdrd.active
+    {
+        border-bottom: 2px solid #f37916;
+    }
+    .ph-txt
+    {
+        color: #fff;
+        font-size: 330%;
+        display: inline-block;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        line-height: 1.2em;
+        
+        padding: 10px 8px;
+    }
+    .ph-one .ph-txt
+    {
+        background-color: #fdc51a;
+    }
+    .ph-ten .ph-txt
+    {
+        background-color: #f3a216;
+    }
+    .ph-hdrd .ph-txt
+    {
+        background-color: #f37916;
+    }
+    .ph-val,
+    .ph-unit
+    {
+        display: block;
+        text-align: center;
+        width: 100px;
+        line-height: 1.4em;
+    }
+    .ph-unit
+    {
+        text-align: right;
+        font-size: 43%;
+    }
+    
+/* + Mypage CSS - End */

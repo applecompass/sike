@@ -23,7 +23,8 @@ ZM.Config = {
         Valid: {
             mail: "请输入邮箱",
             username: "请输入用户名，以便于日后交流",
-            password: "密码不能为空"
+            password: "密码不能为空",
+            numeric: "请输入数字"
         }
 
     },

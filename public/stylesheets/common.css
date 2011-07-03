@@ -67,14 +67,14 @@ a
         margin: 1px 0 0 15px;
         padding: 0 10px;
         background-color: #16c4f3;
-    }images
+    }
     .icon-formerr
     {
         width: 6px;
         height: 7px;
         left: -6px;
         top: 6px;
-        background: url(../images/high/icon_formerr.png) left top no-repeat;
+        background: url(../_imgs/high/icon_formerr.png) left top no-repeat;
     }
     
     /* - Common */
@@ -118,6 +118,7 @@ a
     {
         opacity: 0.6;
         filter: alpha(opacity=60);
+        cursor: default;
     }
     
     /* - Icons */
@@ -128,7 +129,7 @@ a
         display: inline-block;
         *display: inline;
         vertical-align: text-top;
-        background: url(../images/high/icon_go.png) left bottom no-repeat;
+        background: url(../_imgs/high/icon_go.png) left bottom no-repeat;
     }
     .bookmark
     {
@@ -140,11 +141,11 @@ a
     }
     .bkmk-sina
     {
-        background: url(../images/high/bkmk_sina_dis.png) left top no-repeat;
+        background: url(../_imgs/high/bkmk_sina_dis.png) left top no-repeat;
     }
     .bkmk-sina:hover
     {
-        background: url(../images/high/bkmk_sina.png) left top no-repeat;
+        background: url(../_imgs/high/bkmk_sina.png) left top no-repeat;
     }
 
     /* - For zhuomi website */
@@ -211,7 +212,7 @@ a
             width: 14px;
             height: 21px;
             display: block;
-            background: url(../images/high/icon_dropdown.png) left center no-repeat;
+            background: url(../_imgs/high/icon_dropdown.png) left center no-repeat;
         }
 
 /* + Common CSS - End */
