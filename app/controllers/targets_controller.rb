@@ -2,7 +2,7 @@ class TargetsController < ApplicationController
   
   def index 
     @user = User.find(session[:user_id])
-    @targets = @user.target.all
+    @targets = @user.targets.all
     
   end
   
@@ -13,11 +13,11 @@ class TargetsController < ApplicationController
   
   def create
     @target = Target.new(params[:target])
-    @target.category = Category.find(1)
-    @target.metadata = Metadata.find(1)
+    @target.category = Category.find_by_name("running")
+    @target.metadata = Metadata.find_by_name("hour")
     @target.user_id = session[:user_id]
     @target.status = "active"
-    @last = Target.order("id desc").where("user_id = ?", 1).first
+    @last = Target.order("id desc").where("user_id = ?", session[:user_id]).first
     
     if(@last != nil && @last.sequence_no != nil)
       @target.sequence_no = @last.sequence_no + 1
@@ -34,6 +34,7 @@ class TargetsController < ApplicationController
   end
   
   def destroy
+    @target = Target.find(params[:id])
     @target.destroy
 
     redirect_to targets_url

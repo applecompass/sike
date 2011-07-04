@@ -3,7 +3,7 @@
   <li>
     <%= link_to event.name, event_path(event) %>
     <%= link_to 'edit', edit_event_path(event) %>
-    <%= link_to 'delete', event_path(event), :method => :delete %>
+    <%= button_to 'delete', event_path(event), :method => :delete %>
   </li>
 <% end %>
 </ul>

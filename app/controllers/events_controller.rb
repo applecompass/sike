@@ -54,6 +54,7 @@ class EventsController < ApplicationController
   end
   
   def destroy
+    @event = Event.find(params[:id])
     @event.destroy
     
     flash[:alert] = "event was successfully deleted"

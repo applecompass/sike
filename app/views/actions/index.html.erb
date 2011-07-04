@@ -1,0 +1,9 @@
+
+<% @actions.each do |action| %>
+  <li>
+    <%= link_to action.name, action_path(event) %>
+    <%= link_to 'edit', edit_action_path(event) %>
+    <%= button_to 'delete', action_path(event), :method => :delete %>
+  </li>
+<% end %>
+</ul>

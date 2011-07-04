@@ -9,6 +9,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     
     if @user.save
+      session[:user_id] = @user.id
       redirect_to new_target_path
     else
       render :action => :new
